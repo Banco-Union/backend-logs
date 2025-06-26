@@ -25,7 +25,7 @@ async function bootstrap() {
    .setTitle('Backend Logs')
    .setDescription('API Para Backend Logs')
    .setVersion('1.0')
-   .addTag('Marbetes Logs')
+   .addTag('Aplicación Logs')
    .build();
 
    const swaggerCustomOptions = {

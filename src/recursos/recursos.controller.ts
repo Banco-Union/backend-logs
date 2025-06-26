@@ -2,7 +2,9 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { RecursosService } from './recursos.service';
 import { CreateRecursoDto } from './dto/create-recurso.dto';
 import { UpdateRecursoDto } from './dto/update-recurso.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Recursos')
 @Controller('recursos')
 export class RecursosController {
   constructor(private readonly recursosService: RecursosService) {}
